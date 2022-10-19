@@ -1,6 +1,8 @@
 //export template literal variable
 export const inputSample: string = `
 
+---
+
 ### Please edit this as you wish :)
 
 ## Images
