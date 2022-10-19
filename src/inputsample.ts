@@ -1,7 +1,12 @@
 //export template literal variable
-export const dummyInput = `
+export const inputSample: string = `
 
-# Please edit this as you wish :)
+### Please edit this as you wish :)
+
+## Images
+
+![Minion](https://octodex.github.com/images/minion.png)
+![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
 
 ## Headers
 
@@ -39,10 +44,6 @@ _You **can** combine them_
   1. Item 3a
   1. Item 3b
 
-## Images
-
-![This is a alt text.](/image/sample.png "This is a sample image.")
-
 ## Links
 
 You may be using [Markdown Live Preview](https://markdownlivepreview.com/).
@@ -53,12 +54,5 @@ You may be using [Markdown Live Preview](https://markdownlivepreview.com/).
 >
 >> Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
 
-## Tables
-
-| Left columns  | Right columns |
-| ------------- |:-------------:|
-| left foo      | right foo     |
-| left bar      | right bar     |
-| left baz      | right baz     |
 
 `;

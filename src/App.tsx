@@ -1,20 +1,25 @@
 import { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import './App.css';
-import { dummyInput } from './dummyinput';
+import { inputSample } from './inputsample';
 
 function App() {
-  const [input, setInput] = useState('');
+  const [input, setInput] = useState<string>('');
 
   useEffect(() => {
-    setInput(dummyInput);
+    setInput(inputSample);
   }, []);
+
+  const refreshPage = () => {
+    window.location.reload();
+  };
 
   return (
     <div className="app">
       {/* header */}
       <div className="header">
-        <h3>Markdown Live Preview</h3>
+        <h2>Markdown Live Preview</h2>
+        <button onClick={refreshPage}>Input sample</button>
       </div>
       {/* content */}
       <div className="box">
@@ -29,7 +34,7 @@ function App() {
             cols={60}
             rows={5}
           >
-            {dummyInput}
+            {inputSample}
           </textarea>
         </div>
         {/* markdown */}
