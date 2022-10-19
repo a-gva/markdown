@@ -1,3 +1,59 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Roboto Mono', monospace;
+}
+/* HTML5 display-role reset for older browsers */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1 {
+  font-size: 2em;
+  /* line-height: 1.2; */
+  margin: 0.67em 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  /* line-height: 1.33; */
+  margin: 0.83em 0;
+}
+
+h3 {
+  font-size: 1.17em;
+  /* line-height: 1.5; */
+  margin: 1em 0;
+}
+
+h4 {
+  font-size: 1em;
+  /* line-height: 1.5; */
+  margin: 1em 0;
+}
+
+h5 {
+  font-size: 0.83em;
+  /* line-height: 1.5; */
+  margin: 1em 0;
+}
+
+h6 {
+  font-size: 0.67em;
+  line-height: 1.5;
+  margin: 1em 0;
+}
+
+p {
+  font-size: 1em;
+  /* line-height: 1.5; */
+  margin: 1em 0;
+}
