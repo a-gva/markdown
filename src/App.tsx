@@ -1,9 +1,14 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import './App.css';
+import { dummyInput } from './dummyinput';
 
 function App() {
   const [input, setInput] = useState('');
+
+  useEffect(() => {
+    setInput(dummyInput);
+  }, []);
 
   return (
     <div className="app">
@@ -23,7 +28,9 @@ function App() {
             onChange={(e) => setInput(e.target.value)}
             cols={60}
             rows={5}
-          />
+          >
+            {dummyInput}
+          </textarea>
         </div>
         {/* markdown */}
         <div className="item">

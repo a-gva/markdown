@@ -41,9 +41,10 @@
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
   min-height: 500px;
-  border-width: 1px;
+  border-width: 2px;
   border-style: solid;
-  border-radius: 5px;
+  border-radius: 10px;
+  border-color: #393e48;
   resize: none;
   background-color: #1f2937;
   color: #f3f4f6;
@@ -54,9 +55,20 @@ textarea,
   padding: 10px;
 }
 
+.markdown > h1,
+.markdown > h2 {
+  border-bottom: 0.5px solid #898989;
+}
+
 textarea:focus,
 .markdown:focus {
   outline: none;
+  border-color: #bfbfbf;
+  background-color: #222c39;
+}
+
+.markdown {
+  font-family: 'Arial', Courier, monospace;
 }
 
 .item > a {
